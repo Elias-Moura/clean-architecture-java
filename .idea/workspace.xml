@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf5303c4-4ac1-4d70-a635-5b282b6e2fd3" name="Changes" comment="Classe Aluno e Email. Modelando domínio da aplicação.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/escola/Aluno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/escola/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="bf5303c4-4ac1-4d70-a635-5b282b6e2fd3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/escola/dominio/aluno/FabricaDeAluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/escola/dominio/aluno/RepositorioDeAlunos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/escola/dominio/indicacao/Indicacao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/alura/escola/infra/aluno/RepositorioDeAlunosComJDBC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/escola/Indicacao.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,12 +20,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a9334e6e-3c0e-4736-8fb7-8c711bd37620" />
+        <option name="url" value="https://github.com/Elias-Moura/clean-architecture-java.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -40,6 +56,100 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="br.com.alura.escola.aluno" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CPFTest.naoDeveriaCriarCPFComInvalidos">
+    <configuration name="CPFTest.naoDeveriaCriarCPFComInvalidos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clean-architecture" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="escola.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="escola" />
+      <option name="MAIN_CLASS_NAME" value="escola.CPFTest" />
+      <option name="METHOD_NAME" value="naoDeveriaCriarCPFComInvalidos" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clean-architecture" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="escola.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="escola" />
+      <option name="MAIN_CLASS_NAME" value="escola.EmailTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailTest.naoDeveriaCriarEmailsComEnderecosInvalidos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clean-architecture" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="escola.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="escola" />
+      <option name="MAIN_CLASS_NAME" value="escola.EmailTest" />
+      <option name="METHOD_NAME" value="naoDeveriaCriarEmailsComEnderecosInvalidos" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TelefoneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clean-architecture" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="escola.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="escola" />
+      <option name="MAIN_CLASS_NAME" value="escola.TelefoneTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TelefoneTest.naoDeveriaCriarTelefoneInvalidos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="clean-architecture" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="escola.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="escola" />
+      <option name="MAIN_CLASS_NAME" value="escola.TelefoneTest" />
+      <option name="METHOD_NAME" value="naoDeveriaCriarTelefoneInvalidos" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CPFTest.naoDeveriaCriarCPFComInvalidos" />
+        <item itemvalue="JUnit.TelefoneTest.naoDeveriaCriarTelefoneInvalidos" />
+        <item itemvalue="JUnit.TelefoneTest" />
+        <item itemvalue="JUnit.EmailTest.naoDeveriaCriarEmailsComEnderecosInvalidos" />
+        <item itemvalue="JUnit.EmailTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -49,10 +159,120 @@
       <option name="presentableId" value="Default" />
       <updated>1701291893206</updated>
     </task>
+    <task id="LOCAL-00001" summary="Classe Aluno e Email. Modelando domínio da aplicação.">
+      <option name="closed" value="true" />
+      <created>1701377194450</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701377194450</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Classe para representar um CPF">
+      <option name="closed" value="true" />
+      <created>1701448127477</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701448127477</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Teste Unitário da classe CPF">
+      <option name="closed" value="true" />
+      <created>1701448161852</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701448161852</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Construtor e lista de telefones">
+      <option name="closed" value="true" />
+      <created>1701448203003</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701448203003</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Classe para representar um e-mail">
+      <option name="closed" value="true" />
+      <created>1701448231772</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701448231772</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Teste unitário da classe Email">
+      <option name="closed" value="true" />
+      <created>1701448248745</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701448248745</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Classe para representar uma indicação">
+      <option name="closed" value="true" />
+      <created>1701448265957</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701448265957</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Adicionando as dependências de testes">
+      <option name="closed" value="true" />
+      <created>1701448280238</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701448280238</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Classe para representar um telefone.">
+      <option name="closed" value="true" />
+      <created>1701448297582</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701448297582</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Teste unitário da classe telefone.">
+      <option name="closed" value="true" />
+      <created>1701448310688</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701448310688</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Criando pacotes para separar o domínio.">
+      <option name="closed" value="true" />
+      <created>1701451328541</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1701451328541</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Classe Aluno e Email. Modelando domínio da aplicação." />
-    <option name="LAST_COMMIT_MESSAGE" value="Classe Aluno e Email. Modelando domínio da aplicação." />
+    <MESSAGE value="Classe para representar um CPF" />
+    <MESSAGE value="Teste Unitário da classe CPF" />
+    <MESSAGE value="Construtor e lista de telefones" />
+    <MESSAGE value="Classe para representar um e-mail" />
+    <MESSAGE value="Teste unitário da classe Email" />
+    <MESSAGE value="Classe para representar uma indicação" />
+    <MESSAGE value="Adicionando as dependências de testes" />
+    <MESSAGE value="Classe para representar um telefone." />
+    <MESSAGE value="Teste unitário da classe telefone." />
+    <MESSAGE value="Criando pacotes para separar o domínio." />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando pacotes para separar o domínio." />
   </component>
 </project>

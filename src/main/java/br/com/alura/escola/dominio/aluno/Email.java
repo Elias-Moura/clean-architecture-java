@@ -1,4 +1,4 @@
-package escola;
+package br.com.alura.escola.dominio.aluno;
 
 //Value Object
 public class Email {

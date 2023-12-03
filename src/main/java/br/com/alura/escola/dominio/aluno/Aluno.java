@@ -10,6 +10,8 @@ public class Aluno {
     private Email email;
     private List<Telefone> telefones = new ArrayList<>();
 
+    private String senha;
+
     public Aluno(String nome, CPF cpf, Email email) {
         this.nome = nome;
         this.cpf = cpf;

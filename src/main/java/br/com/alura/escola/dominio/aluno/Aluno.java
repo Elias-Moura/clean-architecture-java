@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 //Entidade
+//DDD -> AGGREGATE ROOT -> Uma entidade que tem relação com um ou muitos Value Objects
 public class Aluno {
     private String nome;
     private CPF cpf;
@@ -35,6 +36,9 @@ public class Aluno {
     }
 
     public void adicionarTelefone(String ddd, String numero){
+        if (this.telefones.size() == 2) { //Invariante (ou regra de negócio)
+            throw new LimiteDeTelefonesException("Número máximo de telefones atingidos.");
+        }
         this.telefones.add(new Telefone(ddd,numero));
     }
 }

@@ -24,7 +24,7 @@ public class RepositorioDeAlunosComJDBC implements RepositorioDeAlunos {
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, aluno.getNome());
-            preparedStatement.setString(2, aluno.getCpf());
+            preparedStatement.setString(2, aluno.getCpf().getNumero());
             preparedStatement.setString(3, aluno.getEmail());
             preparedStatement.execute();
 

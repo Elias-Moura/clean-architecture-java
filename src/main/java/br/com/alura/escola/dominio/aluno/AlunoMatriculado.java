@@ -18,4 +18,8 @@ public class AlunoMatriculado implements Evento {
     public LocalDateTime momento() {
         return this.momento;
     }
+
+    public String getCpfDoAluno() {
+        return cpfDoAluno.getNumero();
+    }
 }

@@ -23,8 +23,8 @@ public class Aluno {
         return nome;
     }
 
-    public String getCpf() {
-        return cpf.getNumero();
+    public CPF getCpf() {
+        return cpf;
     }
 
     public String getEmail() {

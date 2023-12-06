@@ -1,7 +1,7 @@
 package br.com.alura.escola.dominio.aluno;
 
 public class CPF {
-    private String numero;
+    private final String numero;
 
 
     public CPF(String numero) {
@@ -14,5 +14,10 @@ public class CPF {
     }
     public String getNumero() {
         return numero;
+    }
+
+    @Override
+    public String toString() {
+        return this.numero;
     }
 }

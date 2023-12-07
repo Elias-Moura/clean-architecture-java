@@ -1,8 +1,8 @@
-import br.com.alura.escola.aplicacao.matricular.MatricularAluno;
-import br.com.alura.escola.aplicacao.matricular.MatricularAlunoDTO;
-import br.com.alura.escola.dominio.aluno.LogDeAlunoMatriculado;
-import br.com.alura.escola.dominio.aluno.PublicadorDeEventos;
-import br.com.alura.escola.infra.aluno.RepositorioDeAlunosEmMemoria;
+import br.com.alura.escola.academico.aplicacao.matricular.MatricularAluno;
+import br.com.alura.escola.academico.aplicacao.matricular.MatricularAlunoDTO;
+import br.com.alura.escola.academico.dominio.aluno.LogDeAlunoMatriculado;
+import br.com.alura.escola.shared.dominio.evento.PublicadorDeEventos;
+import br.com.alura.escola.academico.infra.aluno.RepositorioDeAlunosEmMemoria;
 
 public class MatricularAlunoViaLinhaDeComando {
     public static void main(String[] args) {
